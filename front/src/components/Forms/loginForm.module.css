@@ -1,0 +1,75 @@
+.formInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.formInput p a {
+  text-decoration: underline;
+}
+
+.formInput p a:hover {
+  text-decoration: none;
+}
+
+.formInput input {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  padding: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.formInput input:focus {
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.formInput div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.formInput div * {
+  max-width: 3rem;
+}
+
+.formInput div input {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formInput .logInInput {
+  margin-top: 3rem;
+}
+
+.error {
+  line-height: 1;
+  height: 1.5rem;
+  margin: 1.5rem 0;
+}

@@ -1,0 +1,28 @@
+
+.header {
+    a {
+        height: 100%;
+        width: auto;
+        font-family: "Raleway", sans-serif;
+    }
+    width: 100%;
+    height: 5rem;
+    img {
+        height: 100%;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+    span {
+        font-family: "Raleway", sans-serif;
+    }
+    padding: 1rem 0;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+        border: none;
+        background: none;
+        margin-left: 1rem;
+    }
+}

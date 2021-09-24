@@ -1,0 +1,278 @@
+.container {
+  width: 80vw;
+  margin: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  padding-top: 1rem;
+  width: 5rem;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.contentDiv {
+  padding-top: 10rem;
+  height: 35rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.glass {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.titleContainer {
+  height: 100%;
+  width: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tagline {
+  opacity: 0;
+  -webkit-animation: slideInToRight 2s 0.5s;
+          animation: slideInToRight 2s 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-size: 5rem;
+}
+
+.mainTitle {
+  margin-left: 5.7rem;
+  -webkit-animation: slideInToLeft 2s 2s;
+          animation: slideInToLeft 2s 2s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  line-height: 1;
+  font-size: 3.5rem;
+}
+
+.formContainer {
+  width: 30rem;
+  height: 100%;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formContainer h3 {
+  font-size: 2rem;
+}
+
+.inputDiv {
+  height: 17rem;
+  margin: 2rem 0;
+}
+
+@-webkit-keyframes slideInToRight {
+  0% {
+    opacity: 0;
+    text-indent: -10%;
+  }
+  100% {
+    opacity: 1;
+    text-indent: 0;
+  }
+}
+
+@keyframes slideInToRight {
+  0% {
+    opacity: 0;
+    text-indent: -10%;
+  }
+  100% {
+    opacity: 1;
+    text-indent: 0;
+  }
+}
+
+@-webkit-keyframes slideInToLeft {
+  0% {
+    opacity: 0;
+    text-indent: 10%;
+  }
+  100% {
+    opacity: 1;
+    text-indent: 0;
+  }
+}
+
+@keyframes slideInToLeft {
+  0% {
+    opacity: 0;
+    text-indent: 10%;
+  }
+  100% {
+    opacity: 1;
+    text-indent: 0;
+  }
+}
+
+.blob {
+  -webkit-transition: top 1s, width 1s, height 0s;
+  transition: top 1s, width 1s, height 0s;
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blob circle {
+  fill: #b0b0b090;
+}
+
+.blob * {
+  -webkit-transform-origin: 25rem 30rem;
+          transform-origin: 25rem 30rem;
+  transform-box: 1px;
+  padding: 0rem;
+}
+
+.blob circle:nth-child(0) {
+  -webkit-animation: left 14s ease-out;
+          animation: left 14s ease-out;
+}
+
+.blob circle:nth-child(1) {
+  -webkit-animation: right 18s linear infinite;
+          animation: right 18s linear infinite;
+}
+
+.blob circle:nth-child(2) {
+  -webkit-animation: left 13s ease-in-out infinite;
+          animation: left 13s ease-in-out infinite;
+}
+
+.blob circle:nth-child(3) {
+  -webkit-animation: left 15s linear infinite;
+          animation: left 15s linear infinite;
+}
+
+.blob circle:nth-child(4) {
+  -webkit-animation: right 15s linear infinite;
+          animation: right 15s linear infinite;
+}
+
+.blob circle:nth-child(5) {
+  -webkit-animation: left 14s linear infinite;
+          animation: left 14s linear infinite;
+}
+
+.transitioning {
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 3;
+  opacity: 1;
+}
+
+.transitioning circle {
+  -webkit-animation: translate 3s linear !important;
+          animation: translate 3s linear !important;
+}
+
+@-webkit-keyframes translate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(17.5);
+            transform: scale(17.5);
+  }
+}
+
+@keyframes translate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(17.5);
+            transform: scale(17.5);
+  }
+}
+
+@-webkit-keyframes left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes right {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes right {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

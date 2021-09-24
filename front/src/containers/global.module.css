@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&family=Cabin:wght@400;700&display=swap");
+body {
+  overflow: hidden;
+  font-size: 18px;
+  background: #e7e7e7;
+}
+
+body h1, body h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+body ul {
+  padding: 0;
+  list-style: none;
+}
+
+body button:hover {
+  cursor: pointer;
+}

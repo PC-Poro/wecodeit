@@ -1,0 +1,10 @@
+.footer {
+  position: absolute;
+  font-size: 0.7rem;
+  bottom: 1rem;
+  opacity: 0.6;
+}
+
+.left {
+  left: 5vw;
+}
